@@ -13,7 +13,7 @@ Try {
     (winget search) | Select-Object -Property @{label="Name"; expression={$_.Substring(0, 29)}} | Sort-Object -Property Name
 
     #search for a specific package
-    (winget search) | Where-Object {$_ -like "*SearchTermHere*"}
+    winget search SearchTermHere
 
     #get info on a specific package
     winget show PackageName
