@@ -10,14 +10,19 @@ Try {
 
     <#
     #list all available packages alphabetically
-    (winget search) | Select-Object -Property @{label="Name"; expression={$_.Substring(0, 29)}} | Sort-Object -Property Name
+    winget search | Select-Object -Skip 3 -Property @{label="Name"; expression={$_.Substring(0, 24)}}, @{label="Id"; expression={$_.Substring(24, 35)}}, @{label="Version"; expression={$_.Substring(59)}} | Sort-Object -Property Name
 
     #search for a specific package
     winget search SearchTermHere
+    winget search git
 
     #get info on a specific package
     winget show PackageName
     #>
+
+    #other packages:
+    #DevArt SQL Complete
+    #if PowerToys can take over volume control then include PowerToys
 
     [int]$InstallIndicator=0
 
@@ -43,14 +48,27 @@ Try {
     #Chrome
     winget install Chrome
 
+    #Greenshot
+    #probably create a repo for the settings file a la https://getgreenshot.org/faq/how-can-i-backup-my-greenshot-configuration-or-transfer-it-to-another-machine/
+    winget install Greenshot
+
+    #Git for Windows
+    winget install Git --Exact
+
     #Notepad++
     winget install Notepad++
 
     #PowerToys
     winget install PowerToys
 
+    #SQL Complete (this is hopeful that the package will be added someday)
+    #winget install DevArt SQL Complete
+    #set the snippets manager to the local version of https://github.com/austineric/Snippets
+    #probably create a repo for the xml profile file at C:\Users\EAustin\AppData\Roaming\Devart\dbForge SQL Complete\FormatProfiles
+
     #SQL Server Management Studio
     winget install SQL Server Management Studio
+    #probably create a repo for settings a la https://blog.greglow.com/2018/03/01/shortcut-import-export-settings-sql-server-management-studio/
 
     #Visual Studio Code
     winget install Visual Studio Code
@@ -70,6 +88,9 @@ Try {
     
     #Windows Terminal
     winget install Windows Terminal
+
+    #WinSCP
+    winget install WinSCP
 
 }
 
