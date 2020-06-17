@@ -14,7 +14,6 @@ Try {
 
     #search for a specific package
     winget search SearchTermHere
-    winget search git
 
     #get info on a specific package
     winget show PackageName
@@ -85,6 +84,9 @@ Try {
 
     #VLC Media Player
     winget install VLC media player
+
+    #WinDirStat
+    winget install WinDirStat
     
     #Windows Terminal
     winget install Windows Terminal
