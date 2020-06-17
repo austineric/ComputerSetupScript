@@ -23,6 +23,8 @@ Try {
     #DevArt SQL Complete
     #if PowerToys can take over volume control then include PowerToys
 
+    #may need to force this to run in admin mode since some applications (ie WinDirStat, probably others require that for install)
+
     [int]$InstallIndicator=0
 
     Clear-Host
