@@ -19,9 +19,10 @@ Try {
     winget show PackageName
     #>
 
-    #other packages:
+    #other applications:
     #DevArt SQL Complete
     #if PowerToys can take over volume control then include PowerToys
+    #mssql-scripter (https://github.com/microsoft/mssql-scripter)
 
     #may need to force this to run in admin mode since some applications (ie WinDirStat, probably others require that for install)
 
