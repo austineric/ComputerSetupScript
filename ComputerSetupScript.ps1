@@ -72,7 +72,7 @@ Try {
     winget install SQL Server Management Studio
     #probably create a repo for settings a la https://blog.greglow.com/2018/03/01/shortcut-import-export-settings-sql-server-management-studio/
 
-    #Visual Studio Code
+    #Visual Studio Code (is there a way to turn on settings sync (not the extension, the built-in one)? I am using my github account for that because it seemed more fitting than either a personal or professional Microsoft one)
     winget install Visual Studio Code
 
     #Visual Studio
