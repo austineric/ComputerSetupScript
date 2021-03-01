@@ -67,6 +67,7 @@ alias gs='git status'
 alias gg='!(git gui &)'
 alias gk='!(gitk &)'
 alias cls='clear'
+alias gp='git push'
 "@
 
     #Windows Terminal
