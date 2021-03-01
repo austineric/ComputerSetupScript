@@ -66,6 +66,7 @@ test -f ~/.bashrc && . ~/.bashrc
 alias gs='git status'
 alias gg='!(git gui &)'
 alias gk='!(gitk &)'
+alias cls='clear'
 "@
 
     #Windows Terminal
