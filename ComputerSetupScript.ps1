@@ -63,6 +63,7 @@ Try {
 test -f ~/.profile && . ~/.profile
 test -f ~/.bashrc && . ~/.bashrc
 
+alias gs='git status'
 alias gg='!(git gui &)'
 alias gk='!(gitk &)'
 "@
