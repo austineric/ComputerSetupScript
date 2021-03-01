@@ -57,6 +57,9 @@ Try {
     #Git for Windows
     winget install Git --Exact
 
+    #Windows Terminal
+    winget install "Windows Terminal" --Exact
+
     #Notepad++
     winget install Notepad++
 
@@ -96,6 +99,12 @@ Try {
 
     #WinSCP
     winget install WinSCP
+
+    #post-install activities
+    Write-Host ""
+    Write-Host "Installation complete"
+    Write-Host "Post-installation activies:"
+    Write-Host "-Add git bash to Windows Terminal using the settings in OneNote"
 
 }
 
