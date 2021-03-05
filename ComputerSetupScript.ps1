@@ -65,7 +65,7 @@ test -f ~/.bashrc && . ~/.bashrc
 
 alias gs='git status'
 alias gg='!(git gui &)'
-alias gk='!(gitk &)'
+alias gk='!(gitk --all &)'
 alias cls='clear'
 alias gp='git push'
 "@
