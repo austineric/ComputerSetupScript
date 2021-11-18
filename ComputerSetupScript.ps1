@@ -70,6 +70,9 @@ alias cls='clear'
 alias gp='git push'
 "@
 
+    #set default git hooks path as ".githooks" directory inside repo root directory
+    git config --global core.hooksPath .githooks
+
     #Windows Terminal
     winget install "Windows Terminal" --Exact
 
