@@ -26,6 +26,8 @@ Try {
 
     #may need to force this to run in admin mode since some applications (ie WinDirStat, probably others require that for install)
 
+    #20240119: this script should also set the default tls level to 1.2, that's an annoying thing to forget and have to figure out why something isn't working
+
     [int]$InstallIndicator=0
 
     Clear-Host
